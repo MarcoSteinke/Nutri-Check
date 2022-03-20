@@ -16,7 +16,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand navbar-light bg-light">
@@ -29,7 +28,41 @@
       </div>
     </nav>
     <div class="container">
-      <h1>Nutri Check</h1>
+        <div class="row">
+            <div class="col">
+                <form method="POST" class="form" action="">
+                    <h1>Nutri Check</h1>
+                    <div class="form-group">
+                    <label for="fat">Fett</label>
+                    <input type="number" name="fat" id="fat" class="form-control" placeholder="Angabe in Gramm" aria-describedby="fat-helper">
+                    <small id="fat-helper">Gebe den Fettgehalt deines Produktes in Gramm an</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="fatacid">Gesättigte Fettsäuren</label>
+                    <input type="text" name="fatacid" id="fatacid" class="form-control" placeholder="Angabe in Gramm" aria-describedby="fatacid-helper">
+                    <small id="fatacid-helper">Gebe den Fettgehalt deines Produktes in Gramm an</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="sugar">Zucker</label>
+                    <input type="text" name="sugar" id="sugar" class="form-control" placeholder="Angabe in Gramm" aria-describedby="sugar-helper">
+                    <small id="sugar-helper">Gebe den Zuckergehalt deines Produktes in Gramm an</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="salt">Salz</label>
+                    <input type="text" name="salt" id="salt" class="form-control" placeholder="Angabe in Gramm" aria-describedby="salt-helper">
+                    <small id="salt-helper">Gebe den Salzgehalt deines Produktes in Gramm an</small>
+                  </div>
+                  <hr>
+                  <div class="progress">
+                      <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;"
+                          aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">State</div>
+                  </div>
+              </form>
+            </div>
+            <div class="col">
+                <h1>Bewertung:</h1>
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -48,5 +81,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles/style.css" />
   </body>
 </html>
